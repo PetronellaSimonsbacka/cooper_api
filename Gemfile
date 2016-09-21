@@ -9,8 +9,10 @@ gem 'jbuilder', '~> 2.5'
 gem 'rack-cors', require: 'rack/cors'
 gem 'devise_token_auth'
 
+
 group :development, :test do
   gem 'rspec-rails'
+  gem 'rspec-core'
   gem 'shoulda-matchers'
   gem 'factory_girl_rails'
   gem 'pry'
