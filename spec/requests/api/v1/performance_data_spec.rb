@@ -26,6 +26,4 @@ RSpec.describe Api::V1::PerformanceDataController, type: :request do
       expect(response_json['entries'].count).to eq 5
     end
   end
-
-  #test PerformanceData that belongs to the current user
 end

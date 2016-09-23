@@ -17,7 +17,6 @@ class Api::V1::PerformanceDataController < ApplicationController
   private
 
   def performance_data_params
-    #Figure out a better way
     params.require(:performance_data).permit!
   end
 end
