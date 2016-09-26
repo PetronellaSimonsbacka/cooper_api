@@ -36,11 +36,11 @@ describe 'User Registrtion' do
       end
 
       it 'with an already registered email returns error message' do
-        User.create(email: 'thesuss@susscreations.se',
+        User.create(email: 'gussimonpe@student.gu.se',
                     password: 'password',
                     password_confirmation: 'password')
         post '/api/v1/auth',
-          params: { email: 'thesuss@susscreations.se',
+          params: { email: 'gussimonpe@student.gu.se',
                     password: 'password',
                     password_confirmation: 'password'},
           headers: headers
