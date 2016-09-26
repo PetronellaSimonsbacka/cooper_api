@@ -7,7 +7,7 @@ describe 'User Registrtion' do
     describe 'register a user' do
       it 'with valid sign up returns user & token' do
         post '/api/v1/auth',
-          params: { email: 'thesuss@susscreations.se',
+          params: { email: 'gussimonpe@student.gu.se',
                     password: 'password',
                     password_confirmation: 'password'},
           headers: headers
@@ -17,7 +17,7 @@ describe 'User Registrtion' do
 
       it 'with an invalid password confirmation returns error message' do
         post '/api/v1/auth',
-          params: { email: 'thesuss@susscreations.se',
+          params: { email: 'tgussimonpe@student.gu.se',
                     password: 'password',
                     password_confirmation: 'wrong_password'},
           headers: headers
